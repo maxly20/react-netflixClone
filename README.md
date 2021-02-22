@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+
+# Netflix Clone
+
+A Netflix Clone built with React, axios, using themoviedb API, deployed with Firebase
+
+Deployed live at https://netflix-clone-7db86.web.app/
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

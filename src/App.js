@@ -1,5 +1,5 @@
 import Row from "../src/Components/Row";
-import requests from "./requests";
+import requests from "../src/Data/requests";
 import Banner from "../src/Components/Banner";
 import Nav from "../src/Components/Nav";
 

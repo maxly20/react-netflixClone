@@ -5,6 +5,8 @@ A Netflix Clone built with React, axios, using themoviedb API, deployed with Fir
 Deployed live at https://netflix-clone-9fa2b.web.app/
 
 
+
+
 ![](SitePreview.jpg)
 
 ## Getting Started with Create React App

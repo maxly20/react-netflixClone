@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import axios from "../Data/axios";
-import Youtube from "react-youtube";
+import React, { useState, useEffect } from 'react';
+import axios from '../Data/axios';
+import Youtube from 'react-youtube';
 // import movieTrailer from "movie-trailer";
 
-const base_url = "https://image.tmdb.org/t/p/original/";
+const base_url = 'https://image.tmdb.org/t/p/original/';
 
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
-  const [trailerUrl, setTrailerUrl] = useState("");
+  const [trailerUrl, setTrailerUrl] = useState('');
 
   // a snippet of codes that runs based on a specific condition/variables
   useEffect(() => {
@@ -21,16 +21,16 @@ function Row({ title, fetchUrl, isLargeRow }) {
   }, [fetchUrl]);
 
   const opts = {
-    height: "390",
-    width: "100%",
+    height: '390',
+    width: '100%',
     playerVars: {
       autoplay: 1,
     },
   };
 
-  const handleClick = async (movie) => {
+  const handleClick = async movie => {
     if (trailerUrl) {
-      setTrailerUrl("");
+      setTrailerUrl('');
     } else {
       let trailerurl = await axios.get(
         `/movie/${movie.id}/videos?api_key=fb34530271b349314af0de263d16ab5a`
@@ -40,14 +40,14 @@ function Row({ title, fetchUrl, isLargeRow }) {
   };
 
   return (
-    <div className="row">
+    <div className='row'>
       <h2>{title}</h2>
-      <div className="row__posters">
-        {movies.map((movie) => (
+      <div className='row__posters'>
+        {movies.map(movie => (
           <img
             key={movie.id}
             onClick={() => handleClick(movie)}
-            className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+            className={`row__poster ${isLargeRow && 'row__posterLarge'}`}
             src={`${base_url}${
               isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}

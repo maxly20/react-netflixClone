@@ -4,7 +4,7 @@ A Netflix Clone built with React, axios, using themoviedb API, deployed with Fir
 
 Deployed live at https://netflix-clone-9fa2b.web.app/
 
-
+Mirror : https://maxly-react-netlfix-clone.netlify.app
 
 
 ![](SitePreview.jpg)

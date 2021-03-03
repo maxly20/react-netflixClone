@@ -20,7 +20,9 @@ code {
   background-color: #111;
 }
 
-/* BANNER  */
+/* =============================
+          BANNER  
+=============================*/
 .banner {
   color: white;
   object-fit: contain;
@@ -71,7 +73,9 @@ code {
   );
 }
 
-/* NAV  */
+/* =============================
+          NAV 
+=============================*/
 
 .nav {
   position: fixed;
@@ -80,8 +84,6 @@ code {
   padding: 20px;
   height: 30px;
   z-index: 1;
-  /* display: flex;
-    justify-content: space-between; */
   transition: all 0.5s;
   transition-timing-function: ease-in;
 }
@@ -101,7 +103,9 @@ code {
   object-fit: contain;
 }
 
-/* ROW  */
+/* =============================
+          ROW  
+=============================*/
 .row {
   margin-left: 20px;
   color: white;

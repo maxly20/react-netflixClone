@@ -9,9 +9,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState('');
 
-  // a snippet of codes that runs based on a specific condition/variables
+
   useEffect(() => {
-    // if [], run once when the row loads, and do not run again
     async function fetchData() {
       const request = await axios.get(fetchUrl);
       setMovies(request.data.results);
